@@ -1,22 +1,22 @@
 {
   "development": {
-    "username": "root",
-    "password": "Vakuntdp4.",
-    "database": "user",
+    "username": "ezitmxze_vak",
+    "password": "Vakuntdp4C",
+    "database": "ezitmxze_users",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "Vakuntdp4.",
-    "database": "user",
+    "username": "ezitmxze_vak",
+    "password": "Vakuntdp4C",
+    "database": "ezitmxze_users",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "Vakuntdp4.",
-    "database": "user",
+    "username": "ezitmxze_vak",
+    "password": "Vakuntdp4C",
+    "database": "ezitmxze_users",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
