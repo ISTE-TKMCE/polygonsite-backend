@@ -82,7 +82,7 @@ app.post("/verify", async (req, res) => {
     }
 })
 db.sequelize.sync().then(req => {
-    app.listen(5000, () => {
+    app.listen(process.env.PORT || 3002, () => {
         console.log("server running");
     })
 });
