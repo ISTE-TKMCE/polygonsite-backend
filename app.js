@@ -62,7 +62,7 @@ app.put("/user",
 
         }
     })
-app.get("/", (req,res)=>res.send({"name": "Vinay"}))
+app.get("/", (req,res)=>res.send("<p>Hey</p>"))
 app.get("/users", async (req, res) => {
     if (req.headers.authorization === process.env.TOKEN) {
         return User.findAll().then((users) => res.send(JSON.stringify({ status: 200, data: users, message: 'Successfully fetched data' }))).catch((err) => res.send(JSON.stringify({ status: 400, message: "Couldn't fetch Users" })))
