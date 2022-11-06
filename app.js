@@ -1,12 +1,11 @@
 const express = require("express")
-const { json } = require("sequelize")
 const db = require("./models")
 const { User } = require('./models')
 const multer = require("multer")
 const bodyParser = require("body-parser")
 const path = require("path")
 const cors = require("cors");
-const { createHmac } = require("crypto")
+const morgan = require("morgan")
 require("dotenv").config()
 const app = express()
 app.use(bodyParser.json())
@@ -23,6 +22,7 @@ const corsOptions = {
     optionSuccessStatus: 200,
 }
 app.use(cors(corsOptions))
+app.use(morgan('dev'));
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, './public/screenshots')
