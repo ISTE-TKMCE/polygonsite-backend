@@ -83,7 +83,7 @@ app.post("/verify", async (req, res) => {
 })
 app.get("/", (req,res)=>res.send({"name": "Vinay"}))
 db.sequelize.sync().then(req => {
-    app.listen(3002, () => {
+    app.listen(3009, () => {
         console.log("server running");
     })
 });
